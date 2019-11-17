@@ -136,7 +136,7 @@ int main(){
     }
     
     /*printing*/
-    fp.open("report.csv",std::ios::out);
+    fp.open("../output/report.csv",std::ios::out);
     fp << "Border,Date,Measure,Value,Average" << '\n';
     while(!res.empty()){
         std::vector<std::string> v = res.top();

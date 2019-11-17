@@ -74,7 +74,7 @@ class cmp{
 int main(){
     /*read input file*/
     std::fstream fp;
-    fp.open("../input/Border_Crossing_Entry_Data.csv",std::ios::in);
+    fp.open("./input/Border_Crossing_Entry_Data.csv",std::ios::in);
     std::string cache("");
     std::map<std::string, std::string>m;
     std::unordered_map<uint32_t,uint32_t> col;
@@ -136,7 +136,7 @@ int main(){
     }
     
     /*printing*/
-    fp.open("../output/report.csv",std::ios::out);
+    fp.open("./output/report.csv",std::ios::out);
     fp << "Border,Date,Measure,Value,Average" << '\n';
     while(!res.empty()){
         std::vector<std::string> v = res.top();
